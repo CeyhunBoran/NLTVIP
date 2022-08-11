@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: #252525;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background: #383838;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: none;
+  overflow: hidden;
+}
+.sidebar .sidebar-nav {
+  list-style: none;
+  margin-top: 5rem;
+  height: 100%;
+}
+.sidebar .sidebar-nav li {
+  margin-top: 1rem;
+  padding: 0.3rem;
+  width: 100%;
+  font-size: 3ch;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .sidebar-nav li:hover {
+  background: #646464;
+  cursor: pointer;
+}
+.sidebar .sidebar-nav .active {
+  background: #898989;
+}
+
+.wrapper {
+  margin-left: 250px;
+  position: relative;
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+.wrapper .categories {
+  font-family: "Netflix Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.wrapper .category-row {
+  color: rgb(237, 237, 237);
+  margin: 2vw 1vw;
+}
+.wrapper .category-row .card {
+  height: 300px;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10;
+  justify-content: center;
+  display: inline-flex;
+  background: #363636;
+}
+.wrapper .category-row .card .card-poster {
+  max-width: 100%;
+  max-height: 100%;
+}
+.wrapper .category-row .card .card-title {
+  display: none;
+  position: absolute;
+}
+.wrapper .category-row .card:hover {
+  transition: 200ms;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.wrapper .category-row .card:hover .card-title {
+  text-align: center;
+  font-size: large;
+  top: 84%;
+  height: 50px;
+  width: 100%;
+  background: rgba(43, 43, 43, 0.7);
+  display: inline;
+  transition: 200ms;
+}
+.wrapper .category-row-header {
+  margin: 0;
+  line-height: 1.4;
+}
+
+#previewModal {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  padding-top: 60px;
+  background-color: rgba(45, 45, 45, 0.7);
+  width: 100%;
+  height: 100%;
+  font: 14px/22px "Lato", Arial, sans-serif;
+}
+#previewModal .previewModal-overlay {
+  margin: 0 auto;
+  position: relative;
+  background: #e4e4e4;
+  width: 1000px;
+  height: 640px;
+}
+#previewModal .previewModal-poster {
+  position: absolute;
+  height: 250px;
+  width: 150px;
+  top: 160px;
+  left: 40px;
+  z-index: 2;
+}
+#previewModal .previewModal-poster img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#previewModal .previewModal-header {
+  height: 342px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#previewModal .previewModal-header .header-details {
+  padding: 190px 0 0 280px;
+}
+#previewModal .previewModal-header .title {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 13px;
+  position: relative;
+}
+#previewModal .previewModal-header .rating {
+  position: relative;
+  top: 3px;
+  margin-left: 12px;
+  background: #C4AF3D;
+  border-radius: 5px;
+  color: #544C21;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+#previewModal .previewModal-header .director {
+  position: relative;
+  top: 3px;
+}
+#previewModal .previewModal-header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: rgb(95, 95, 95);
+  z-index: -1;
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+}
+#previewModal .previewModal-content {
+  bottom: 0px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B1B0AC;
+}
+#previewModal .previewModal-content .column1 {
+  padding-left: 10px;
+  padding-top: 120px;
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+#previewModal .previewModal-content .column1 .tag {
+  background: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  line-height: 35px;
+  cursor: pointer;
+}
+#previewModal .previewModal-content .column2 {
+  padding-left: 41px;
+  padding-top: 30px;
+  margin-left: 20px;
+  width: 480px;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */

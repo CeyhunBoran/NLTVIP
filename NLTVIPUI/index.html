@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="environment.development.js"></script>
+    <!--Data Access-->
+    <script src="./shared/http.js"></script>
+    <!--Services-->
+    <script src="./services/menu.js"></script>
+    <script src="./services/subCategory.js"></script>
+    <script src="./services/moviesService.js"></script>
+    <!--Components-->
+    <script src="./components/menuComponent.js"></script>
+    <script src="./components/subCategoryComponent.js"></script>
+    <script src="./components/moviesComponent.js"></script>
+    <script src="appInit.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <aside id="sidebar" class="sidebar">
+        <ul id="sidebar-nav" class="sidebar-nav"></ul>
+    </aside>
+    <main class="wrapper">
+        <div class="categories" id="categories"></div>
+    </main>
+    <div id="previewModal"></div>
+</body>
+
+</html>

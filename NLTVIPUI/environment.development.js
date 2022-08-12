@@ -3,3 +3,4 @@ const dict = {
 }
 var app = app || {};
 app.Components = app.Components || {};
+app.Caching = app.Caching || {};

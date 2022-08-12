@@ -1,4 +1,4 @@
-app.Components.menuComponent = function(data, getSubCategories) {
+app.Components.menuComponent = function(data, GetSubCategories) {
     this.data = data;
     let list = document.getElementById("sidebar-nav");
 
@@ -22,7 +22,7 @@ app.Components.menuComponent = function(data, getSubCategories) {
             let prevActive = document.getElementsByClassName("active");
             if(prevActive.length != 0) {prevActive[0].classList.remove("active")};
             ev.target.classList.add("active");
-            getSubCategories();
+            GetSubCategories();
         }
 
     })
